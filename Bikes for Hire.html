@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<title> Arden Bicycle Hire</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<Body>
+    <div class="w3-container w3-green">
+        <img src="images/logo.png" alt="logo" />
+        <h1>Arden Bicycle Hire</h1>
+    </div>
+    <div class="w3-bar w3-dark-grey">
+        <a href="Index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+        <a href="About Us.html" class="w3-bar-item w3-button w3-mobile">About Us</a>
+        <a href="The Team.html" class="w3-bar-item w3-button w3-mobile">The Team</a>
+        <a href="Events.html" class="w3-bar-item w3-button w3-mobile">Events</a>
+        <a href="customer Portal.html" class="w3-bar-item w3-button w3-mobile">Customer Portal</a>
+        <a href="Bikes for Hire.html" class="w3-bar-item w3-button w3-mobile">Bikes for Hire</a>
+        <a href="Services.html" class="w3-bar-item w3-button w3-mobile">Services</a>
+        <a href="Contact Us.html" class="w3-bar-item w3-button w3-mobile">Contact Us</a>
+    </div>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .dropbtn {
+            background-color:darkgrey;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+            .dropbtn:hover, .dropbtn:focus {
+                background-color: darkgray;
+            }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+        .dropdown a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="w3-container w3-green">
+            <h2>Bikes for Hire</h2>
+            <p>Click on the button to open our range of bikes for Hire.</p>
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Bikes For Hire</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#My Anchor1">Standard Road bikes</a>
+                    <a href="#My Anchor2">Deluxe Road Bikes</a>
+                    <a href="#My Anchor3"> Hybrid Bikes</a>
+                    <a href="#My Anchor4"> Deluxe Hybrid Bikes</a>
+                    <a href="#My Anchor5">Electric Bikes</a>
+                    <a href="#My Anchor6"> Corporate Bookings</a>
+                </div>
+            </div>
+            <div class="w3-container w3-green">
+                <h3 id="My Anchor1"> Standard Road bikes</h3>
+                <p>A Lightweight entry level bike suitable for the basic needs such as charity rides or work travel. Prices start from £70 per week or £15 per day</p>
+                <h4 id="My Anchor2"> Deluxe Road Bike</h4>
+                <p> These bikes are suited for experienced race competitors of both cycling and triathalon. Prices start from £100 per week or £20 per day </p>
+                <h5 id="My Anchor3"> Hybrid Bikes</h5>
+                <p>These bikes are for people who want a leisurely stroll around the town or just general sightseeing. Prices start from £50 per week or £10 per day </p>
+                <h6 id="My Anchor4"> Deluxe Hybrid Bike</h6>
+                <p> These bikes are very similar to the Hybrid Bike however come equipped with a rear luggage rack and an optional front basket. Prices start from £60 per week or £13 per day</p>
+                <h7 id="My Anchor5"> Electric Bikes</h7>
+                <p> These bikes come equipped with a powerful 250 watt for pedal free acceleration ideal for going up hills. Prices start from £150 per week or £40 per day with a refundable deposit of £250 required </p>
+                <h8 id="My Anchor6"> Corporate Bookings</h8>
+                <p> We are able to supply bike for various functions for example TV and Photoshoots, please email us with your requirements and we will send you a quote</p>
+                </div>
+                <script>
+                    /* When the user clicks on the button,
+                    toggle between hiding and showing the dropdown content */
+                    function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                    }
+
+                    // Close the dropdown if the user clicks outside of it
+                    window.onclick = function (event) {
+                        if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                                var openDropdown = dropdowns[i];
+                                if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                }
+                            }
+                        }
+                    }
+                </script>
+</body>
+</html>
